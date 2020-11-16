@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "959710909262",
+    "firebase_url": "https://finalmkulima.firebaseio.com",
+    "project_id": "finalmkulima",
+    "storage_bucket": "finalmkulima.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:959710909262:android:ccbd3d389c4ea85e2a041f",
+        "android_client_info": {
+          "package_name": "com.example.finalmkulima"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "959710909262-ll192u86pd0mqc0dt57r233lah4uu3h5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.finalmkulima",
+            "certificate_hash": "e7f10dde6656076f48ece6bdf1ab38380ac11771"
+          }
+        },
+        {
+          "client_id": "959710909262-93tsqpktm6d33rgbm5qufnq196uo3bn4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAfCfahnDU01hyScAHSX830QocmlH55GDw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "959710909262-93tsqpktm6d33rgbm5qufnq196uo3bn4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
