@@ -2,7 +2,13 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     package="com.example.finalmkulima">
-
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
@@ -15,31 +21,74 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:replace="android:icon">
-        <activity android:name=".VerifyPhoneActivity"></activity>
-        <activity android:name=".ResetPasswordActivity" />
-        <activity android:name=".Farmer.FarmerMaintainProductsActivity" />
-        <activity android:name=".SearchProductsActivity" />
-        <activity android:name=".Farmer.FarmerUserProductsActivity" />
-        <activity android:name=".Farmer.FarmerNewOrdersActivity" />
-        <activity android:name=".ConfirmFinalOrderActivity" />
-        <activity android:name=".CartActivity" />
-        <activity android:name=".ProductDetailsActivity" />
-        <activity android:name=".SettingsActivity" />
+        <activity android:name=".Farmers.ReportActivity"></activity>
+        <activity android:name=".Transporters.TransporterSettingsActivity" />
+        <activity android:name=".Farmers.FarmerSettingsActivity" />
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="@string/google_maps_key" />
+
         <activity
-            android:name=".HomeActivity"
+            android:name=".Farmers.FarmersMapActivity"
+            android:label="@string/title_activity_farmers_map" />
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".Transporters.TransportersMapActivity"
+            android:label="@string/title_activity_transporters_map" />
+        <activity android:name=".Transporters.TransporterLoginRegisterActivity" />
+        <activity android:name=".Admin.AdminCheckNewProductsActivity" />
+        <activity android:name=".Admin.AdminHomeActivity" />
+        <activity android:name=".Farmers.FarmerHomeActivity" />
+        <activity android:name=".Farmers.FarmerLoginActivity" />
+        <activity android:name=".Farmers.FarmerRegistrationActivity" />
+        <activity android:name=".Buyers.VerifyPhoneActivity" />
+        <activity android:name=".Buyers.ResetPasswordActivity" />
+        <activity android:name=".Farmers.FarmerMaintainProductsActivity" />
+        <activity android:name=".Buyers.SearchProductsActivity" />
+        <activity android:name=".Farmers.FarmerUserProductsActivity" />
+        <activity android:name=".Farmers.FarmerNewOrdersActivity" />
+        <activity android:name=".Buyers.ConfirmFinalOrderActivity" />
+        <activity android:name=".Buyers.CartActivity" />
+        <activity android:name=".Buyers.ProductDetailsActivity" />
+        <activity android:name=".Buyers.SettingsActivity" />
+        <activity
+            android:name=".Buyers.HomeActivity"
             android:label="@string/title_activity_home"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".Farmer.AdminAddNewProduct" />
-        <activity android:name=".Farmer.AdminCategoryActivity" />
-        <activity android:name=".RegisterActivity" />
-        <activity android:name=".LoginActivity" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".Farmers.FarmerAddNewProductActivity" />
+        <activity android:name=".Farmers.FarmerProductCategoryActivity" />
+        <activity android:name=".Buyers.RegisterActivity" />
+        <activity android:name=".Buyers.LoginActivity" />
+        <activity android:name=".Buyers.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
+        </activity> <!-- <service android:name=".Services.MyFirebaseMessagingService"> -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="com.google.firebase.MESSAGING_EVENT"/> -->
+        <!-- </intent-filter> -->
+        <!-- </service> -->
         <activity
             android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
             android:theme="@style/Base.Theme.AppCompat" />

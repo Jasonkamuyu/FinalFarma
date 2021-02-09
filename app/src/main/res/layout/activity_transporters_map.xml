@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    tools:context=".Transporters.TransportersMapActivity" >
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="720dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="173dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/transporter_logout_btn"
+            android:layout_width="197dp"
+            android:layout_height="41dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="0dp"
+            android:background="@color/colorPrimaryDark"
+            android:text="logout"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/transporter_settings_btn"
+            android:layout_width="194dp"
+            android:layout_height="41dp"
+            android:layout_alignParentTop="true"
+            android:background="@color/colorPrimaryDark"
+            android:text="settings"
+            android:textColor="@android:color/white" />
+
+
+        <LinearLayout
+            android:id="@+id/Customer_info"
+            android:layout_width="match_parent"
+            android:layout_height="171dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="17dp"
+            android:background="@android:color/white"
+            android:gravity="bottom"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/Customer_profile"
+                android:layout_width="99dp"
+                android:layout_height="171dp"
+                android:padding="20sp"
+                android:src="@drawable/profile" />
+
+            <LinearLayout
+                android:layout_width="304dp"
+                android:layout_height="154dp"
+                android:orientation="vertical"
+                android:paddingLeft="40sp"
+
+                >
+
+                <TextView
+                    android:id="@+id/Customer_Destination"
+                    android:layout_width="240dp"
+                    android:layout_height="42dp"
+                    android:paddingBottom="10sp"
+                    android:text="Destination: --" />
+
+                <TextView
+                    android:id="@+id/Customer_Name"
+                    android:layout_width="240dp"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="20sp"
+                    android:paddingBottom="10sp" />
+
+                <TextView
+                    android:id="@+id/Customer_Phone"
+                    android:layout_width="238dp"
+                    android:layout_height="53dp"
+                    android:paddingTop="10sp"
+                    android:paddingBottom="10sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</FrameLayout>
+
+
+
+
+
+
+

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ConfirmFinalOrderActivity">
+    tools:context=".Buyers.ConfirmFinalOrderActivity">
 
     <TextView
         android:id="@+id/txt"
@@ -17,11 +17,21 @@
         android:textSize="18dp"
         android:textStyle="bold" />
 
+<!--    <Button-->
+<!--        android:id="@+id/report_button"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_centerInParent="true"-->
+<!--        android:text="Sales Report"-->
+<!--        android:background="@null"-->
+<!--        android:layout_below="@+id/txt"-->
+<!--        />-->
+
     <EditText
         android:id="@+id/shipment_name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/txt"
+        android:layout_below="@+id/report_button"
         android:layout_marginLeft="20dp"
         android:layout_marginTop="5dp"
         android:layout_marginRight="20dp"
@@ -76,7 +86,7 @@
         android:layout_marginLeft="20dp"
         android:layout_below="@+id/shipment_city"
         android:ems="10"
-        android:hint="0701234568"
+        android:hint="confirm your mpesa number: 0701234568"
         android:inputType="phone"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -92,7 +102,7 @@
         android:layout_marginRight="8dp"
         android:layout_below="@+id/etPhone"
         android:ems="10"
-        android:hint="Amount to pay"
+        android:hint="Amount to pay:KSH"
         android:inputType="number"
         app:layout_constraintTop_toBottomOf="@+id/shipment_city"
         app:layout_constraintEnd_toEndOf="parent"

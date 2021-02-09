@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/farm3"
-    tools:context=".RegisterActivity">
+    tools:context=".Buyers.RegisterActivity">
 
     <ImageView
         android:id="@+id/register_Applogo"
@@ -57,6 +57,7 @@
         android:layout_height="59dp"
         android:layout_below="@+id/register_email_input"
         android:layout_marginTop="7dp"
+        android:outlineSpotShadowColor="@android:color/white"
         android:layout_marginRight="-8dp"
         android:layout_toLeftOf="@+id/register_phone_input"
         android:dropDownSelector="@android:color/white"

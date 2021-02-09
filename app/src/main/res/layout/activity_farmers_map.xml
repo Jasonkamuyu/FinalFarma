@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Farmers.FarmersMapActivity">
+
+    <fragment
+        android:id="@+id/farmers_map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/farmer_settings"
+            android:layout_width="187dp"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark"
+            android:text="settings"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/farmer_logout"
+            android:layout_width="203dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@color/colorPrimaryDark"
+            android:text="logout"
+            android:textColor="@android:color/white" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="367dp"
+            android:layout_height="35dp"
+            android:layout_below="@+id/farmer_settings"
+            android:layout_marginStart="20sp"
+            android:layout_marginLeft="20sp"
+            android:layout_marginTop="44dp"
+            android:layout_marginEnd="20sp"
+            android:layout_marginRight="20sp"
+            android:layout_marginBottom="20sp">
+
+            <fragment
+                android:id="@+id/place_autocomplete_fragment"
+                android:name="com.google.android.libraries.places.widget.AutocompleteSupportFragment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+
+                />
+
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="bottom">
+
+        <LinearLayout
+            android:id="@+id/Transporter_info"
+            android:layout_width="match_parent"
+            android:layout_height="211dp"
+            android:layout_gravity="bottom"
+            android:background="@android:color/white"
+            android:orientation="horizontal"
+            android:visibility="gone"
+
+            >
+
+            <ImageView
+                android:id="@+id/Transporter_profile"
+                android:layout_width="133dp"
+                android:layout_height="158dp"
+                android:padding="20sp"
+                android:src="@drawable/profile" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/Driver_Name"
+                    android:layout_width="240dp"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="20sp"
+                    android:paddingBottom="10sp" />
+
+                <TextView
+                    android:id="@+id/Driver_Phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="20sp"
+                    android:paddingBottom="10sp" />
+
+                <TextView
+                    android:id="@+id/Driver_Car"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="20sp"
+                    android:paddingBottom="10sp" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom">
+
+        <Button
+            android:id="@+id/call_ride"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark"
+            android:gravity="center"
+            android:text="call transporter"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="16dp" />
+
+    </LinearLayout>
+
+
+</FrameLayout>
+

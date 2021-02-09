@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    tools:context=".Transporters.TransporterLoginRegisterActivity">
+
+    <ImageView
+        android:id="@+id/transporter_login_img"
+        android:layout_width="match_parent"
+        android:layout_height="233dp"
+        android:background="@drawable/sellerlogin" />
+
+    <TextView
+        android:id="@+id/transporter_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="100dp"
+        android:text="Transporter Login"
+        android:layout_below="@+id/transporter_login_img"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/transporter_email_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Email"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/transporter_txt"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/transporter_password_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/transporter_email_txt"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="numberPassword" />
+
+    <Button
+        android:id="@+id/transporter_login_btn"
+        android:layout_width="match_parent"
+        android:background="@color/design_default_color_secondary"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/transporter_password_txt"
+        android:layout_height="wrap_content"
+        android:text="Login" />
+
+    <TextView
+        android:id="@+id/transporter_register_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/transporter_login_btn"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="130dp"
+        android:text="Dont Have an Account?"
+        android:textColor="@color/design_default_color_primary"
+        android:textAlignment="center" />
+
+    <Button
+        android:id="@+id/transporter_register"
+        android:layout_width="match_parent"
+        android:background="@color/design_default_color_secondary"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/transporter_register_txt"
+        android:layout_height="wrap_content"
+        android:text="Register" />
+
+
+</RelativeLayout>

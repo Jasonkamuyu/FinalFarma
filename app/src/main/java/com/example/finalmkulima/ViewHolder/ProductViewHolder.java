@@ -12,7 +12,7 @@ import com.example.finalmkulima.R;
 
 public class ProductViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
 
-    public TextView txtProductName, txtProductDescription, txtProductPrice;
+    public TextView txtProductName, txtProductDescription, txtProductPrice,txtBuyerLocation,txtFarmerName,txtFarmerPhone;
     public ImageView imageView;
     public ItemClickListener listner;
 
@@ -24,6 +24,9 @@ public class ProductViewHolder extends RecyclerView.ViewHolder implements View.O
         txtProductName = (TextView) itemView.findViewById(R.id.product_name);
         txtProductDescription = (TextView) itemView.findViewById(R.id.product_description);
         txtProductPrice = (TextView) itemView.findViewById(R.id.product_price);
+        txtBuyerLocation=(TextView) itemView.findViewById(R.id.Buyer_Location);
+        txtFarmerName=(TextView) itemView.findViewById(R.id.farmer_product_name);
+        txtFarmerPhone=(TextView) itemView.findViewById(R.id.farmer_product_phone);
     }
 
     public void setItemClickListner(ItemClickListener listner)

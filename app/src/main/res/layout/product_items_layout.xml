@@ -54,6 +54,40 @@
         android:textSize="16dp"
         android:textColor="@color/colorPrimaryDark"
         />
+
+        <TextView
+            android:id="@+id/Buyer_Location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/product_description"
+            android:text="Buyer Location"
+            android:layout_marginTop="2dp"
+            android:textAlignment="center"
+            android:textSize="16dp"
+            android:textColor="@color/colorPrimaryDark"
+            />
+        <TextView
+            android:id="@+id/farmer_product_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Buyer_Location"
+            android:text="Farmer Name"
+            android:layout_marginTop="2dp"
+            android:textAlignment="center"
+            android:textSize="16dp"
+            android:textColor="@color/colorPrimaryDark"
+            />
+        <TextView
+            android:id="@+id/farmer_product_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/farmer_product_name"
+            android:text="Farmer phone"
+            android:layout_marginTop="2dp"
+            android:textAlignment="center"
+            android:textSize="16dp"
+            android:textColor="@color/colorPrimaryDark"
+            />
     </RelativeLayout>
 
 </androidx.cardview.widget.CardView>

@@ -6,7 +6,7 @@ android {
     buildToolsVersion "29.0.3"
     defaultConfig {
         applicationId "com.example.finalmkulima"
-        minSdkVersion 23
+        minSdkVersion 22
         targetSdkVersion 29
         versionCode 1
         versionName "1.0"
@@ -38,24 +38,39 @@ dependencies {
     implementation 'androidx.appcompat:appcompat:1.2.0'
     implementation platform('com.google.firebase:firebase-bom:26.0.0')
     implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
-    implementation 'com.google.firebase:firebase-database:19.3.0'
+    implementation 'com.google.firebase:firebase-database:19.5.1'
     implementation 'com.firebaseui:firebase-ui-database:6.4.0'
 
     implementation 'com.squareup.picasso:picasso:2.71828'
 
-    implementation 'com.google.firebase:firebase-auth:16.0.5'
-    implementation 'com.google.firebase:firebase-storage:16.0.4'
+    implementation 'com.google.firebase:firebase-auth:20.0.1'
+    implementation 'com.google.firebase:firebase-storage:11.0.4'
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
     implementation 'com.google.android.material:material:1.2.1'
     implementation 'androidx.navigation:navigation-fragment:2.3.1'
     implementation 'androidx.navigation:navigation-ui:2.3.1'
     implementation 'androidx.lifecycle:lifecycle-extensions:2.0.0'
+
+    implementation 'com.google.android.gms:play-services-maps:17.0.0'
+
+    implementation 'com.google.android.gms:play-services-location:17.1.0'
+    implementation 'com.google.android.gms:play-services-location:11.0.1'
+
+    implementation 'com.google.maps.android:android-maps-utils:2.1.0'
+    implementation 'com.google.firebase:firebase-messaging:20.2.0'
     testImplementation 'junit:junit:4.12'
+
+    implementation 'com.karumi:dexter:6.1.2'
+
+    implementation 'com.firebase:geofire-android:2.1.1'
 
     implementation 'com.theartofdev.edmodo:android-image-cropper:2.8.+'
     implementation 'com.google.firebase:firebase-analytics'
 
     implementation 'com.github.rey5137:material:1.2.5'
+
+    implementation 'com.github.bumptech.glide:glide:4.11.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.11.0'
 
     implementation 'com.paypal.sdk:paypal-android-sdk:2.15.3'
 
@@ -94,4 +109,7 @@ dependencies {
     implementation 'com.squareup.okio:okio:2.1.0'
 
     implementation 'androidx.browser:browser:1.2.0'
+    implementation 'com.google.android.libraries.places:places:2.4.0'
+
+
 }

@@ -2,11 +2,13 @@ package com.example.finalmkulima.Model;
 
 public class Products {
 
-    private String pname,description,price,image,category,pid,date,time;
+    private String pname,description,price,image,category,pid,date,time,productState,farmerAddress,farmerName,phone;
 
-    public Products(){}
+    public Products(){
 
-    public Products(String pname, String description, String price, String image, String category, String pid, String date, String time) {
+    }
+
+    public Products(String pname, String description, String price, String image, String category, String pid, String date, String time, String productState, String farmerAddress, String farmerName, String phone) {
         this.pname = pname;
         this.description = description;
         this.price = price;
@@ -15,6 +17,10 @@ public class Products {
         this.pid = pid;
         this.date = date;
         this.time = time;
+        this.productState = productState;
+        this.farmerAddress = farmerAddress;
+        this.farmerName = farmerName;
+        this.phone = phone;
     }
 
     public String getPname() {
@@ -80,4 +86,37 @@ public class Products {
     public void setTime(String time) {
         this.time = time;
     }
+
+    public String getProductState() {
+        return productState;
+    }
+
+    public void setProductState(String productState) {
+        this.productState = productState;
+    }
+
+    public String getFarmerAddress() {
+        return farmerAddress;
+    }
+
+    public void setFarmerAddress(String farmerAddress) {
+        this.farmerAddress = farmerAddress;
+    }
+
+    public String getFarmerName() {
+        return farmerName;
+    }
+
+    public void setFarmerName(String farmerName) {
+        this.farmerName = farmerName;
+    }
+
+    public String getPhone() {
+        return phone;
+    }
+
+    public void setPhone(String phone) {
+        this.phone = phone;
+    }
 }
+
